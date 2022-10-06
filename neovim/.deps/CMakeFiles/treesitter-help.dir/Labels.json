@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help-complete.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-install.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-mkdir.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-download.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-update.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-patch.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-configure.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"treesitter-help"
+		],
+		"name" : "treesitter-help"
+	}
+}

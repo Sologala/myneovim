@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks-complete.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-install.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-mkdir.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-download.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-update.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-patch.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-configure.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"luarocks"
+		],
+		"name" : "luarocks"
+	}
+}

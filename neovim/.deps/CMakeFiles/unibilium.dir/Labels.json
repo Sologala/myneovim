@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/unibilium"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/unibilium.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/unibilium-complete.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-install.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-mkdir.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-download.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-update.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-patch.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-configure.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/unibilium-stamp/unibilium-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"unibilium"
+		],
+		"name" : "unibilium"
+	}
+}

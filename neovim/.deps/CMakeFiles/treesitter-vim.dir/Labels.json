@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-vim"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-vim.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-vim-complete.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-install.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-mkdir.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-download.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-update.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-patch.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-configure.rule"
+		},
+		{
+			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-vim-stamp/treesitter-vim-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"treesitter-vim"
+		],
+		"name" : "treesitter-vim"
+	}
+}
