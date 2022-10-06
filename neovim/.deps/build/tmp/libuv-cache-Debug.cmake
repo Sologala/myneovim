@@ -1,0 +1,2 @@
+
+set(CMAKE_OSX_ARCHITECTURES "" CACHE STRING "Initial cache" FORCE)

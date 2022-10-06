@@ -34,3 +34,5 @@ build
 *.app
 CMakeCache.txt
 neovim/.deps/usr
+neovim/.deps/src
+!neovim/.deps/build
