@@ -37,5 +37,5 @@ neovim/.deps/usr/*
 neovim/.deps/CMakeFiles/*
 neovim/.deps/build/tmp/*
 !neovim/.deps/build
-
+.local_history
 neovim/.deps/.ninja_log
