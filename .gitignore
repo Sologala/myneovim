@@ -33,6 +33,9 @@ build
 *.out
 *.app
 CMakeCache.txt
-neovim/.deps/usr
-neovim/.deps/src
+neovim/.deps/usr/*
+neovim/.deps/CMakeFiles/*
+neovim/.deps/build/tmp/*
 !neovim/.deps/build
+
+neovim/.deps/.ninja_log
