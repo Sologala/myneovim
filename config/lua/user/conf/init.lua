@@ -22,6 +22,7 @@ M.setup = function()
     "todo-comments",
     "nvim-spectre", -- find and replace 
     "vim-illuminate",
+    "telescope",
     "cmp",
     --"cmp-path",
    --"vim-illuminate"
