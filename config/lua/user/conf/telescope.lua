@@ -33,8 +33,14 @@ end
 telescope.setup {
   defaults = {
     buffer_previewer_maker = new_maker,
-
-    prompt_prefix = " ",
+    file_ignore_patterns = {
+        "^./build/",
+        "^./out/",
+        "^./.cache/",
+        "^./.clangd/",
+        "^./.git/"
+    },
+prompt_prefix = " ",
     selection_caret = " ",
     path_display = {
       shorten = {
