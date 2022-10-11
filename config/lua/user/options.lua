@@ -57,6 +57,13 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 -- WSL yank support
 vim.cmd [[
+let g:cpp_function_highlight = 1
+let g:cpp_attributes_highlight = 1
+
+let g:cpp_member_highlight = 1
+
+let g:cpp_simple_highlight = 1
+
 let s:clip = '/mnt/c/Windows/System32/clip.exe' 
 let g:ultest_deprecation_notice = 0
 if executable(s:clip)

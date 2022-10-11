@@ -225,8 +225,8 @@ require "nvim-tree.events".on_file_created(function(file) vim.cmd("edit " .. fil
 -- require"nvim-tree.events".on_file_created(function(file) vim.cmd("edit "..vim.fn.fnamemodify(file.fname, ":p")) end)
 
 -- auto close feature
--- vim.cmd(
---   [[
---     autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
--- ]]
--- )
+--vim.cmd(
+--  [[
+--    autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+--]]
+--)
