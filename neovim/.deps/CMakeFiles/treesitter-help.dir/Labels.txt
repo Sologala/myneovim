@@ -1,13 +1,13 @@
 # Target labels
  treesitter-help
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-help-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/treesitter-help
+/root/myneovim/neovim/.deps/CMakeFiles/treesitter-help.rule
+/root/myneovim/neovim/.deps/CMakeFiles/treesitter-help-complete.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-install.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-download.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-update.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-patch.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-configure.rule
+/root/myneovim/neovim/.deps/build/src/treesitter-help-stamp/treesitter-help-build.rule

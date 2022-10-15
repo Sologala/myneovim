@@ -1,13 +1,13 @@
 # Target labels
  libtermkey
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libtermkey
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libtermkey.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libtermkey-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libtermkey
+/root/myneovim/neovim/.deps/CMakeFiles/libtermkey.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libtermkey-complete.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-install.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-download.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-update.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-patch.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-configure.rule
+/root/myneovim/neovim/.deps/build/src/libtermkey-stamp/libtermkey-build.rule

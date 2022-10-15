@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-lua"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-lua"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-lua.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-lua.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-lua-complete.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-lua-complete.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-install.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-install.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-mkdir.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-mkdir.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-download.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-download.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-update.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-update.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-patch.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-patch.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-configure.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-configure.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-build.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-lua-stamp/treesitter-lua-build.rule"
 		}
 	],
 	"target" : 

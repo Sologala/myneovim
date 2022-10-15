@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/msgpack"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/msgpack"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/msgpack.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/msgpack.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/msgpack-complete.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/msgpack-complete.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-install.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-install.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-mkdir.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-mkdir.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-download.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-download.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-update.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-update.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-patch.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-patch.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-configure.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-configure.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/msgpack-stamp/msgpack-build.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/msgpack-stamp/msgpack-build.rule"
 		}
 	],
 	"target" : 

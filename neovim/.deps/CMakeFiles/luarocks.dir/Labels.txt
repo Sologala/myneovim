@@ -1,13 +1,13 @@
 # Target labels
  luarocks
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luarocks-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks-stamp/luarocks-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/luarocks
+/root/myneovim/neovim/.deps/CMakeFiles/luarocks.rule
+/root/myneovim/neovim/.deps/CMakeFiles/luarocks-complete.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-install.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-download.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-update.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-patch.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-configure.rule
+/root/myneovim/neovim/.deps/build/src/luarocks-stamp/luarocks-build.rule

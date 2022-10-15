@@ -1,13 +1,13 @@
 # Target labels
  luajit
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luajit
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luajit.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luajit-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/luajit-stamp/luajit-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/luajit
+/root/myneovim/neovim/.deps/CMakeFiles/luajit.rule
+/root/myneovim/neovim/.deps/CMakeFiles/luajit-complete.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-install.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-download.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-update.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-patch.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-configure.rule
+/root/myneovim/neovim/.deps/build/src/luajit-stamp/luajit-build.rule

@@ -1,1 +1,1 @@
-cmd='/home/wen/neovim/neovim/neovim/.deps/build/src/luarocks/configure;--prefix=/home/wen/neovim/neovim/neovim/.deps/usr;--force-config;--with-lua=/home/wen/neovim/neovim/neovim/.deps/usr;--with-lua-include=/home/wen/neovim/neovim/neovim/.deps/usr/include/luajit-2.1;--with-lua-interpreter=luajit'
+cmd='/root/myneovim/neovim/.deps/build/src/luarocks/configure;--prefix=/root/myneovim/neovim/.deps/usr;--force-config;--with-lua=/root/myneovim/neovim/.deps/usr;--with-lua-include=/root/myneovim/neovim/.deps/usr/include/luajit-2.1;--with-lua-interpreter=luajit'

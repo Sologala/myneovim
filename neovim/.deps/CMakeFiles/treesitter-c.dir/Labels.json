@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-c"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-c"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-c.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-c.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/treesitter-c-complete.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/treesitter-c-complete.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-install.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-install.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-mkdir.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-mkdir.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-download.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-download.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-update.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-update.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-patch.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-patch.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-configure.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-configure.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-build.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/treesitter-c-stamp/treesitter-c-build.rule"
 		}
 	],
 	"target" : 

@@ -1,13 +1,13 @@
 # Target labels
  libvterm
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libvterm
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libvterm.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libvterm-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libvterm-stamp/libvterm-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libvterm
+/root/myneovim/neovim/.deps/CMakeFiles/libvterm.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libvterm-complete.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-install.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-download.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-update.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-patch.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-configure.rule
+/root/myneovim/neovim/.deps/build/src/libvterm-stamp/libvterm-build.rule

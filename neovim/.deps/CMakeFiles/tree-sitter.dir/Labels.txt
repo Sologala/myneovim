@@ -1,13 +1,13 @@
 # Target labels
  tree-sitter
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/tree-sitter
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/tree-sitter.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/tree-sitter-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/tree-sitter
+/root/myneovim/neovim/.deps/CMakeFiles/tree-sitter.rule
+/root/myneovim/neovim/.deps/CMakeFiles/tree-sitter-complete.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-install.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-download.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-update.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-patch.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-configure.rule
+/root/myneovim/neovim/.deps/build/src/tree-sitter-stamp/tree-sitter-build.rule

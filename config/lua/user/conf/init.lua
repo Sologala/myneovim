@@ -24,7 +24,6 @@ M.setup = function()
     "vim-illuminate",
     "telescope",
     "cmp",
-    --"cmp-path",
    --"vim-illuminate"
   }
 

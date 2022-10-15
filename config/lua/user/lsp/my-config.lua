@@ -29,6 +29,16 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
+require('lspconfig')['cmake'].setup{
+    --on_attach = on_attach,
+    on_attach = require('user.lsp.handlers').on_attach,
+    apabilities = require("user.lsp.handlers").capabilities,
+    flags = lsp_flags,
+    cmd = { "cmake-language-server" },
+    buildDirectory = "build",
+    single_file_support = true,
+    filetypes = {"cmake"}
+}
 require('lspconfig')['clangd'].setup{
     --on_attach = on_attach,
     on_attach = require('user.lsp.handlers').on_attach,

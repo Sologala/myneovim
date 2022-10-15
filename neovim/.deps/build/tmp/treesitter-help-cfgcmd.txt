@@ -1,1 +1,1 @@
-cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/wen/neovim/neovim/neovim/.deps/usr;-DPARSERLANG=help;-GNinja;-C<TMP_DIR>/treesitter-help-cache-$<CONFIG>.cmake;<SOURCE_DIR><SOURCE_SUBDIR>'
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/root/myneovim/neovim/.deps/usr;-DPARSERLANG=help;-C<TMP_DIR>/treesitter-help-cache-$<CONFIG>.cmake;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

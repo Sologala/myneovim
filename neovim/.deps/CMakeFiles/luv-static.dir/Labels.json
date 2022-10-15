@@ -2,58 +2,58 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luv-static"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/luv-static"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luv-static.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/luv-static.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/luv-static-complete.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/luv-static-complete.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-install.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-install.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-mkdir.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-mkdir.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-download.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-download.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-update.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-update.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-patch.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-patch.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-configure.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-configure.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/luv-static-stamp/luv-static-build.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/luv-static-stamp/luv-static-build.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/lua-compat-5.3-complete.rule"
+			"file" : "/root/myneovim/neovim/.deps/CMakeFiles/lua-compat-5.3-complete.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-install.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-install.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-mkdir.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-mkdir.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-download.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-download.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-update.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-update.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-patch.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-patch.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-configure.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-configure.rule"
 		},
 		{
-			"file" : "/home/wen/neovim/neovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-build.rule"
+			"file" : "/root/myneovim/neovim/.deps/build/src/lua-compat-5.3-stamp/lua-compat-5.3-build.rule"
 		}
 	],
 	"target" : 

@@ -1,13 +1,13 @@
 # Target labels
  libuv
 # Source files and their labels
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libuv
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libuv.rule
-/home/wen/neovim/neovim/neovim/.deps/CMakeFiles/libuv-complete.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-install.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-mkdir.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-download.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-update.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-patch.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-configure.rule
-/home/wen/neovim/neovim/neovim/.deps/build/src/libuv-stamp/libuv-build.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libuv
+/root/myneovim/neovim/.deps/CMakeFiles/libuv.rule
+/root/myneovim/neovim/.deps/CMakeFiles/libuv-complete.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-install.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-mkdir.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-download.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-update.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-patch.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-configure.rule
+/root/myneovim/neovim/.deps/build/src/libuv-stamp/libuv-build.rule
