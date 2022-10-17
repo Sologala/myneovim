@@ -23,6 +23,8 @@ M.setup = function()
     "nvim-spectre", -- find and replace 
     "vim-illuminate",
     "telescope",
+    "autosave",
+    "comment",
     "cmp",
    --"vim-illuminate"
   }

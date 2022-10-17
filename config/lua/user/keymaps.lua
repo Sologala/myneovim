@@ -1,6 +1,6 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
+-- local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -31,15 +31,15 @@ keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 
 -- formatting
 keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
-keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+--keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
 
 -- save buffer
 keymap("n", "<leader>w", ":w<cr>", opts)
 -- exit cur window
 keymap("n", "<leader>d", ":q<cr>", opts)
 -- delete cur buffer
-keymap("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
-keymap("n", "<leader>Q", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
+--keymap("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
+keymap("n", "<leader>q", ":bw<cr>", opts)
 -- exit whole program
 
 keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
@@ -55,6 +55,7 @@ keymap("n", "N", "Nzzzv", opts)
 -- keymap("n", "J", "mzJ`z", opts)
 -- keymap("n", "j", "jzz", opts)
 -- keymap("n", "k", "kzz", opts)
+
 
 -- Resize with arrows
 -- keymap("n", "<A-Up>", ":resize -2<CR>", opts)
