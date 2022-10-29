@@ -27,6 +27,7 @@ M.setup = function()
     "comment",
     "trouble",
     "cmp",
+    "gitsigns"
    --"vim-illuminate"
   }
 
