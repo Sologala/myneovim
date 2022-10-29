@@ -25,6 +25,7 @@ M.setup = function()
     "telescope",
     "autosave",
     "comment",
+    "trouble",
     "cmp",
    --"vim-illuminate"
   }

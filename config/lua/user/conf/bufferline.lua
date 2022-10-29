@@ -36,7 +36,7 @@ bufferline.setup ({
     max_name_length = 18,
     max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
     tab_size = 18,
-    diagnostics = false, --| "nvim_lsp" | "coc",
+    diagnostics = "nvim_lsp", --| "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
       return "("..count..")"
@@ -61,7 +61,7 @@ bufferline.setup ({
         return true
       end
     end,
-    offsets = {{filetype = "NvimTree", text = "File Explorer", text_align="center"}}, -- | function , text_align = "left" | "center" | "right"}},
+    offsets = {{filetype = "NvimTree", text = "Explorer", text_align="center"}}, -- | function , text_align = "left" | "center" | "right"}},
     show_buffer_icons = true, --| false, -- disable filetype icons for buffers
     show_buffer_close_icons = true, --| false,
     show_close_icon = true, --| false,
@@ -69,10 +69,10 @@ bufferline.setup ({
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
     -- can also be a table containing 2 custom separators
     -- [focused and unfocused]. eg: { '|', '|' }
-    separator_style = "thin", --| "slant" | "thick" | "thin" | { 'any', 'any' },
+    separator_style = "slant", --| "slant" | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = false, --| true,
     always_show_bufferline = true, -- | false,
-    sort_by =  'directory',  -- ,'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
+    sort_by =  'id',  -- ,'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
     --   -- add custom logic
     --   return buffer_a.modified > buffer_b.modified
     -- end

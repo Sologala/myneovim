@@ -39,7 +39,7 @@ neovim/.deps/build/tmp/*
 !neovim/.deps/build
 .local_history
 neovim/.deps/.ninja_log
-
+.github
 config/plugin/packer_compiled.lua
 config/plugin/packer_compiled.lua
 neovim/.deps/build/src
