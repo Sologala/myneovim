@@ -39,7 +39,7 @@ keymap("n", "<leader>w", ":w<cr>", opts)
 keymap("n", "<leader>d", ":q<cr>", opts)
 -- delete cur buffer
 --keymap("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
-keymap("n", "<leader>q", ":bw<cr>", opts)
+keymap("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
 -- exit whole program
 
 keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
