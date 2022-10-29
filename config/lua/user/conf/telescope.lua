@@ -49,7 +49,7 @@ prompt_prefix = " ",
         -- setting `path_display.shorten = { len = 1, exclude = {1, -1} }`
         -- will give a path like:
         --   `alpha/b/g/delta.txt`
-        len = 8, exclude = { 1, -1 }
+        len = 10, exclude = { 1, -1 }
       },
     },
 
@@ -123,7 +123,7 @@ prompt_prefix = " ",
       theme = "dropdown",
       previewer = false,
       -- find_command = { "find", "-type", "f" },
-      find_command = { "fd", "-H" , "-I"},  -- "-H" search hidden files, "-I" do not respect to gitignore
+      find_command = { "fd", "-H" , "-I", "--strip-cwd-prefix"},  -- "-H" search hidden files, "-I" do not respect to gitignore
     },
 
     -- Default configuration for builtin pickers goes here:
