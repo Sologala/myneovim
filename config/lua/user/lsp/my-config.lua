@@ -29,7 +29,9 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-require('lspconfig')['cmake'].setup{
+
+lspconfig = require('lspconfig')
+lspconfig['cmake'].setup{
     --on_attach = on_attach,
     on_attach = require('user.lsp.handlers').on_attach,
     apabilities = require("user.lsp.handlers").capabilities,
@@ -39,11 +41,13 @@ require('lspconfig')['cmake'].setup{
     single_file_support = true,
     filetypes = {"cmake"}
 }
-require('lspconfig')['clangd'].setup{
+
+lspconfig['clangd'].setup{
     --on_attach = on_attach,
     on_attach = require('user.lsp.handlers').on_attach,
     apabilities = require("user.lsp.handlers").capabilities,
     flags = lsp_flags,
+    root_dir = lspconfig.util.root_pattern("build", "out"),
     cmd = {
     "clangd",     -- NOTE: 只支持clangd 13.0.0 及其以下版本，新版本会有问题
         "--background-index", -- 后台建立索引，并持久化到disk
