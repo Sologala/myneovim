@@ -43,3 +43,4 @@ neovim/.deps/.ninja_log
 config/plugin/packer_compiled.lua
 config/plugin/packer_compiled.lua
 neovim/.deps/build/src
+install_plugins_manifests.txt
