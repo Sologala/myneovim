@@ -65,6 +65,8 @@ lspconfig['clangd'].setup{
         "--compile-commands-dir=.",
 		-- 输入建议中，已包含头文件的项与还未包含头文件的项会以圆点加以区分
 		--"--header-insertion-decorators",
+        "--fallback-style=MicroSoft",
+        "--header-insertion=never",
 		"-j=12",
 		"--pretty",
     },
