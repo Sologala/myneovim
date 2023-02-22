@@ -2,8 +2,8 @@
 
 config_path=${HOME}/.config
 neovim_config_path=${config_path}/nvim
-#packer_install_path=${HOME}/.local/share/nvim/site/pack/packer/start
-packer_install_path=${HOME}/.local/share/nvim/site/pack/packer/opt/packer.nvim
+packer_install_path=${HOME}/.local/share/nvim/site/pack/packer/start/packer.nvim
+#packer_install_path=${HOME}/.local/share/nvim/site/pack/packer/opt/packer.nvim
 cur_dir=$(pwd)
 if [ ! -d ${config_path} ]; then
     echo No ${config_path} exist 
