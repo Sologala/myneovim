@@ -35,3 +35,8 @@ for i in ${plugins_names}
 do
     echo use \"${cur_dir}/config/plugin_offline/$i\" >> install_plugins_manifests.txt
 done
+
+
+echo installing lsp
+pip3 install cmake-language-server
+pip3 install "python-lsp-server[all]"
