@@ -41,7 +41,22 @@ lspconfig['cmake'].setup{
     single_file_support = true,
     filetypes = {"cmake"}
 }
-
+lspconfig['pylsp'].setup{
+    on_attach = require('user.lsp.handlers').on_attach,
+    apabilities = require("user.lsp.handlers").capabilities,
+    -- cmd = { "pylsp" },
+    filetypes = {"python"},
+    settings = {
+    pylsp = {
+        plugins = {
+            pycodestyle = {
+                ignore = {'W391', 'E226','E302','E41'},
+                maxLineLength = 150
+            }
+        }
+    }
+    }
+}
 lspconfig['clangd'].setup{
     --on_attach = on_attach,
     on_attach = require('user.lsp.handlers').on_attach,
@@ -65,7 +80,7 @@ lspconfig['clangd'].setup{
         "--compile-commands-dir=.",
 		-- 输入建议中，已包含头文件的项与还未包含头文件的项会以圆点加以区分
 		--"--header-insertion-decorators",
-        "--fallback-style=MicroSoft",
+        "--fallback-style=Microsoft",
         "--header-insertion=never",
 		"-j=12",
 		"--pretty",
