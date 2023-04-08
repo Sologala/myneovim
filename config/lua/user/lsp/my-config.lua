@@ -38,6 +38,7 @@ lspconfig['cmake'].setup{
     flags = lsp_flags,
     cmd = { "cmake-language-server" },
     buildDirectory = "build",
+    root_dir = lspconfig.util.root_pattern("build", "out"),
     single_file_support = true,
     filetypes = {"cmake"}
 }
