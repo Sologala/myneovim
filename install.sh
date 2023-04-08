@@ -33,7 +33,8 @@ rm ./install_plugins_manifests.txt
 plugins_names=$(ls -l ${cur_dir}/config/plugin_offline/|awk '/^d/ {print $NF}') 
 for i in ${plugins_names}
 do
-    echo use \"${cur_dir}/config/plugin_offline/$i\" >> install_plugins_manifests.txt
+    #echo use \"${cur_dir}/config/plugin_offline/$i\" >> install_plugins_manifests.txt
+    sed -i 78a\ "  use \"${cur_dir}/config/plugin_offline/$i\"" ${cur_dir}/config/lua/user/plugins.lua
 done
 
 
