@@ -22,7 +22,7 @@ echo "${packer_install_path}"
 
 rm -rf ${packer_install_path}
 ln -s ${cur_dir}/config/plugin_offline/packer.nvim ${packer_install_path}
-echo ln -s ${pwd}/config/plugin_offline/packer.nvim ${packer_install_path}
+echo ln -s ${cur_dir}/config/plugin_offline/packer.nvim ${packer_install_path}
 
 echo 3. install tmux.config
 ln -s ${cur_dir}/tmux/tmux.conf ${HOME}/.tmux.conf 
