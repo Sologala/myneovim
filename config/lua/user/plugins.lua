@@ -76,52 +76,40 @@ packer.init {
 
 
 return packer.startup(function(use)
-  -- My plugplenaryins here
-  -- use "wbthomason/packer.nvim" -- Have packer manage itself
-  --use '~/.config/nvim/plugin_offline/impatient.nvim'
-  --use '~/.config/nvim/plugin_offline/popup.nvim'
-  --use '~/.config/nvim/plugin_offline/nvim-notify'
-  --use '~/.config/nvim/plugin_offline/nvim-web-devicons'
-    use "/root/myneovim/config/plugin_offline/Colorschemes"
-    use "/root/myneovim/config/plugin_offline/Comment.nvim"
-    use "/root/myneovim/config/plugin_offline/LuaSnip"
-    use "/root/myneovim/config/plugin_offline/autosave.nvim"
-    use "/root/myneovim/config/plugin_offline/bufferline.nvim"
-    use "/root/myneovim/config/plugin_offline/cmp-nvim-lsp"
-    use "/root/myneovim/config/plugin_offline/cmp-path"
-    use "/root/myneovim/config/plugin_offline/cmp_luasnip"
-    use "/root/myneovim/config/plugin_offline/friendly-snippets"
-    use "/root/myneovim/config/plugin_offline/gitsigns.nvim"
-    use "/root/myneovim/config/plugin_offline/impatient.nvim"
-    use "/root/myneovim/config/plugin_offline/lsp_signature.nvim-0.2.0"
-    use "/root/myneovim/config/plugin_offline/lualine.nvim"
-    use "/root/myneovim/config/plugin_offline/nvim-autopairs"
-    use "/root/myneovim/config/plugin_offline/nvim-cmp"
-    use "/root/myneovim/config/plugin_offline/nvim-comment"
-    use "/root/myneovim/config/plugin_offline/nvim-lightbulb"
-    use "/root/myneovim/config/plugin_offline/nvim-lspconfig"
-    use "/root/myneovim/config/plugin_offline/nvim-notify"
-    use "/root/myneovim/config/plugin_offline/nvim-spectre"
-    use "/root/myneovim/config/plugin_offline/nvim-tree.lua"
-    use "/root/myneovim/config/plugin_offline/nvim-web-devicons"
-    use "/root/myneovim/config/plugin_offline/packer.nvim"
-    use "/root/myneovim/config/plugin_offline/plenary.nvim"
-    use "/root/myneovim/config/plugin_offline/popup.nvim"
-    use "/root/myneovim/config/plugin_offline/telescope-live-grep-args.nvim"
-    use "/root/myneovim/config/plugin_offline/telescope-ui-select.nvim"
-    use "/root/myneovim/config/plugin_offline/telescope.nvim"
-    use "/root/myneovim/config/plugin_offline/todo-comments.nvim"
-    use "/root/myneovim/config/plugin_offline/toggleterm.nvim"
-    use "/root/myneovim/config/plugin_offline/trouble.nvim"
-    use "/root/myneovim/config/plugin_offline/vim-cpp-modern"
-    use "/root/myneovim/config/plugin_offline/vim-illuminate"
-    use "/root/myneovim/config/plugin_offline/which-key.nvim"
-    -- for file in lfs.dir(plugin_offline_path) do
-    --     if file ~= "." and file ~= ".." then
-    --         --print(plugin_offline_path .. '/' ..file)
-    --         use(plugin_offline_path .. '/' ..file)
-    --     end
-    -- end
+use "/home/wen/repo/myneovim/config/plugin_offline/which-key.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/vim-illuminate"
+use "/home/wen/repo/myneovim/config/plugin_offline/vim-cpp-modern"
+use "/home/wen/repo/myneovim/config/plugin_offline/trouble.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/toggleterm.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/todo-comments.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/telescope-ui-select.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/telescope.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/telescope-live-grep-args.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/popup.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/plenary.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/packer.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-web-devicons"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-tree.lua"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-spectre"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-notify"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-lspconfig"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-lightbulb"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-comment"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-cmp"
+use "/home/wen/repo/myneovim/config/plugin_offline/nvim-autopairs"
+use "/home/wen/repo/myneovim/config/plugin_offline/LuaSnip"
+use "/home/wen/repo/myneovim/config/plugin_offline/lualine.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/lsp_signature.nvim-0.2.0"
+use "/home/wen/repo/myneovim/config/plugin_offline/impatient.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/gitsigns.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/friendly-snippets"
+use "/home/wen/repo/myneovim/config/plugin_offline/Comment.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/Colorschemes"
+use "/home/wen/repo/myneovim/config/plugin_offline/cmp-path"
+use "/home/wen/repo/myneovim/config/plugin_offline/cmp-nvim-lsp"
+use "/home/wen/repo/myneovim/config/plugin_offline/cmp_luasnip"
+use "/home/wen/repo/myneovim/config/plugin_offline/bufferline.nvim"
+use "/home/wen/repo/myneovim/config/plugin_offline/autosave.nvim"
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
