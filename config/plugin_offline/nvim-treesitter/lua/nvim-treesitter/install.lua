@@ -395,13 +395,13 @@ local function run_install(cache_folder, install_folder, lang, repo, with_sync, 
 
   ---@type Command[]
   local command_list = {}
-  if not from_local_path then
-    vim.list_extend(command_list, { shell.select_install_rm_cmd(cache_folder, project_name) })
-    vim.list_extend(
-      command_list,
-      shell.select_download_commands(repo, project_name, cache_folder, revision, M.prefer_git)
-    )
-  end
+  -- if not from_local_path then
+  --   vim.list_extend(command_list, { shell.select_install_rm_cmd(cache_folder, project_name) })
+  --   vim.list_extend(
+  --     command_list,
+  --     shell.select_download_commands(repo, project_name, cache_folder, revision, M.prefer_git)
+  --   )
+  -- end
   if generate_from_grammar then
     if repo.generate_requires_npm then
       if vim.fn.executable "npm" ~= 1 then
@@ -432,7 +432,9 @@ local function run_install(cache_folder, install_folder, lang, repo, with_sync, 
       },
     })
   end
+  print("compile:"..compile_location)
   vim.list_extend(command_list, {
+    
     shell.select_compile_command(repo, cc, compile_location),
     shell.select_mv_cmd("parser.so", parser_lib_name, compile_location),
     {
@@ -444,9 +446,9 @@ local function run_install(cache_folder, install_folder, lang, repo, with_sync, 
       cmd = reattach_if_possible_fn(lang, true),
     },
   })
-  if not from_local_path then
-    vim.list_extend(command_list, { shell.select_install_rm_cmd(cache_folder, project_name) })
-  end
+  -- if not from_local_path then
+  --   vim.list_extend(command_list, { shell.select_install_rm_cmd(cache_folder, project_name) })
+  -- end
 
   if with_sync then
     if iter_cmd_sync(command_list) == true then
