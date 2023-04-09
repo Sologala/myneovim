@@ -27,8 +27,9 @@ M.setup = function()
     "comment",
     "trouble",
     "cmp",
-    "gitsigns"
-   --"vim-illuminate"
+    "gitsigns",
+    "treesitter",
+    "treesitter-context",
   }
 
   local helper_set = {}
