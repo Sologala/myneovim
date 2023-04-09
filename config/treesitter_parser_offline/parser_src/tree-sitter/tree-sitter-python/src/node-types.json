@@ -951,11 +951,7 @@
             "named": false
           },
           {
-            "type": "is not",
-            "named": false
-          },
-          {
-            "type": "not in",
+            "type": "not",
             "named": false
           }
         ]
@@ -1046,7 +1042,7 @@
       "required": true,
       "types": [
         {
-          "type": "expression",
+          "type": "primary_expression",
           "named": true
         }
       ]
@@ -1453,45 +1449,16 @@
   {
     "type": "format_expression",
     "named": true,
-    "fields": {
-      "expression": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "expression",
-            "named": true
-          },
-          {
-            "type": "expression_list",
-            "named": true
-          },
-          {
-            "type": "yield",
-            "named": true
-          }
-        ]
-      },
-      "format_specifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "format_specifier",
-            "named": true
-          }
-        ]
-      },
-      "type_conversion": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "type_conversion",
-            "named": true
-          }
-        ]
-      }
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1747,45 +1714,32 @@
   {
     "type": "interpolation",
     "named": true,
-    "fields": {
-      "expression": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "expression",
-            "named": true
-          },
-          {
-            "type": "expression_list",
-            "named": true
-          },
-          {
-            "type": "yield",
-            "named": true
-          }
-        ]
-      },
-      "format_specifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "format_specifier",
-            "named": true
-          }
-        ]
-      },
-      "type_conversion": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "type_conversion",
-            "named": true
-          }
-        ]
-      }
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "expression_list",
+          "named": true
+        },
+        {
+          "type": "format_specifier",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "yield",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -2353,52 +2307,6 @@
   {
     "type": "string",
     "named": true,
-    "fields": {
-      "interpolation": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "interpolation",
-            "named": true
-          }
-        ]
-      },
-      "prefix": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "\"",
-            "named": false
-          }
-        ]
-      },
-      "string_content": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "string_content",
-            "named": true
-          }
-        ]
-      },
-      "suffix": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "\"",
-            "named": false
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "string_content",
-    "named": true,
     "fields": {},
     "children": {
       "multiple": true,
@@ -2406,6 +2314,10 @@
       "types": [
         {
           "type": "escape_sequence",
+          "named": true
+        },
+        {
+          "type": "interpolation",
           "named": true
         }
       ]
@@ -3058,10 +2970,6 @@
     "named": false
   },
   {
-    "type": "is not",
-    "named": false
-  },
-  {
     "type": "lambda",
     "named": false
   },
@@ -3079,10 +2987,6 @@
   },
   {
     "type": "not",
-    "named": false
-  },
-  {
-    "type": "not in",
     "named": false
   },
   {
@@ -3134,6 +3038,10 @@
     "named": false
   },
   {
+    "type": "{{",
+    "named": false
+  },
+  {
     "type": "|",
     "named": false
   },
@@ -3143,6 +3051,10 @@
   },
   {
     "type": "}",
+    "named": false
+  },
+  {
+    "type": "}}",
     "named": false
   },
   {

@@ -4,13 +4,13 @@ if not status_ok then
 end
 
 allconfigs = require("nvim-treesitter.parsers").get_parser_configs()
-allconfigs["cpp"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-cpp.git"
-allconfigs["python"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-python.git"
-allconfigs["yaml"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-yaml.git"
-allconfigs["json"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-hjson.git"
-allconfigs["bash"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-bash.git"
-allconfigs["lua"].install_info.uul = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-lua.git"
-
+-- allconfigs["cpp"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-cpp"
+-- allconfigs["python"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-python"
+-- allconfigs["yaml"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-yaml"
+-- allconfigs["json"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-hjson"
+-- allconfigs["bash"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-bash"
+-- allconfigs["lua"].install_info.url = "~/.config/nvim/treesitter_parser_offline/parser_src/tree-sitter/tree-sitter-lua"
+--
 configs.setup {
   -- ensure_installed ="all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   ensure_installed = {"cpp", "python", "yaml", "json", "bash", "lua"},

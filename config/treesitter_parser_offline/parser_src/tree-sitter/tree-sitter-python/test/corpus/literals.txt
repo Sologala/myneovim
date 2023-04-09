@@ -139,31 +139,31 @@ b"\x12\u12\U12\x13\N{WINKING FACE}"
 
 (module
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content
-      (escape_sequence))))
+    (string
+      (escape_sequence)))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content
-      (escape_sequence))))
+    (string
+      (escape_sequence)))
   (expression_statement
-    (string (string_content
+    (string
       (escape_sequence)
-      (escape_sequence))))
+      (escape_sequence)))
   (expression_statement
-    (string (string_content
+    (string
       (escape_sequence)
       (escape_sequence)
       (escape_sequence)
@@ -175,9 +175,9 @@ b"\x12\u12\U12\x13\N{WINKING FACE}"
       (escape_sequence)
       (escape_sequence)
       (escape_sequence)
-      (escape_sequence))))
+      (escape_sequence)))
   (expression_statement
-    (string (string_content))))
+    (string)))
 
 ================================================================================
 Raw strings
@@ -199,20 +199,19 @@ r"\\"
 
 (module
   (expression_statement
-    (string (string_content
-      (escape_sequence))))
+    (string
+      (escape_sequence)))
   (expression_statement
-    (string (string_content
-      (escape_sequence))))
+    (string
+      (escape_sequence)))
   (comment)
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (comment)
   (expression_statement
     (string
-      (string_content)
       (interpolation
         (integer))))
   (expression_statement
@@ -235,8 +234,8 @@ re.compile(r"(\n|\A)#include\s*['\"]"
         (identifier))
       (argument_list
         (concatenated_string
-          (string (string_content))
-          (string (string_content)))))))
+          (string)
+          (string))))))
 
 ================================================================================
 Format strings
@@ -260,54 +259,42 @@ f"{yield d}"
   (comment)
   (expression_statement
     (string
-      (string_content)
       (interpolation
         (call
           (identifier)
           (argument_list
             (string
-              (string_content)
               (interpolation
-                (identifier))
-              (string_content)))))
-      (string_content)))
+                (identifier))))))))
   (expression_statement
     (string
-      (string_content)
-      (interpolation
-        (identifier))
-      (string_content)))
-  (expression_statement
-    (string
-      (string_content)
-      (interpolation
-        (identifier))
-      (string_content)))
-  (expression_statement
-    (string (string_content)))
-  (expression_statement
-    (string
-      (string_content)
-      (interpolation
-        (identifier))
-      (string_content)))
-  (expression_statement
-    (string
-      (string_content)
       (interpolation
         (identifier))))
   (expression_statement
-    (string (string_content)))
-  (expression_statement
     (string
-      (string_content)
       (interpolation
-        (identifier))
-      (string_content)))
+        (identifier))))
+  (expression_statement
+    (string))
   (expression_statement
     (string
       (interpolation
-        (expression_list (identifier)))))
+        (identifier))))
+  (expression_statement
+    (string
+      (interpolation
+        (identifier))))
+  (expression_statement
+    (string))
+  (expression_statement
+    (string
+      (interpolation
+        (identifier))))
+  (expression_statement
+    (string
+      (interpolation
+        (expression_list
+          (identifier)))))
   (expression_statement
     (string
       (interpolation
@@ -323,18 +310,15 @@ f"{b:{c.d}.{d.e}}"
 f"{a:#06x}"
 f"{a=}"
 f"{a=:.2f}"
-f"{value:{width + padding!r}.{precision}}"
 
 --------------------------------------------------------------------------------
 
 (module
   (expression_statement
     (string
-      (string_content)
       (interpolation
         (identifier)
         (format_specifier))
-      (string_content)
       (interpolation
         (identifier)
         (format_specifier))))
@@ -358,19 +342,7 @@ f"{value:{width + padding!r}.{precision}}"
     (string (interpolation (identifier))))
   (expression_statement
     (string
-      (interpolation (identifier) (format_specifier))))
-  (expression_statement
-    (string
-      (interpolation
-        (identifier)
-        (format_specifier
-          (format_expression
-            (binary_operator
-              (identifier)
-              (identifier))
-            (type_conversion))
-          (format_expression
-            (identifier)))))))
+      (interpolation (identifier) (format_specifier)))))
 
 ================================================================================
 Unicode escape sequences
@@ -382,10 +354,10 @@ Unicode escape sequences
 
 (module
   (expression_statement
-    (string (string_content
+    (string
       (escape_sequence)
       (escape_sequence)
-      (escape_sequence)))))
+      (escape_sequence))))
 
 ================================================================================
 Other primitives
@@ -416,9 +388,9 @@ Concatenated strings
 (module
   (expression_statement
     (concatenated_string
-      (string (string_content))
-      (string (string_content))
-      (string (string_content)))))
+      (string)
+      (string)
+      (string))))
 
 ================================================================================
 Multi-line strings
@@ -464,25 +436,25 @@ and another escaped newline\n\
 
 (module
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content)))
+    (string))
   (expression_statement
-    (string (string_content
+    (string
       (escape_sequence)
       (escape_sequence)
       (escape_sequence)
       (escape_sequence)
       (escape_sequence)
-      (escape_sequence)))))
+      (escape_sequence))))
 
 ================================================================================
 Lists

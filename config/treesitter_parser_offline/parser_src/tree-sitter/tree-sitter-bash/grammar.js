@@ -335,7 +335,6 @@ module.exports = grammar({
     )),
 
     heredoc_redirect: $ => seq(
-      field('descriptor', optional($.file_descriptor)),
       choice('<<', '<<-'),
       $.heredoc_start
     ),
@@ -355,7 +354,6 @@ module.exports = grammar({
     ),
 
     herestring_redirect: $ => seq(
-      field('descriptor', optional($.file_descriptor)),
       '<<<',
       $._literal
     ),

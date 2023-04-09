@@ -787,18 +787,7 @@
   {
     "type": "heredoc_redirect",
     "named": true,
-    "fields": {
-      "descriptor": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "file_descriptor",
-            "named": true
-          }
-        ]
-      }
-    },
+    "fields": {},
     "children": {
       "multiple": false,
       "required": true,
@@ -813,18 +802,7 @@
   {
     "type": "herestring_redirect",
     "named": true,
-    "fields": {
-      "descriptor": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "file_descriptor",
-            "named": true
-          }
-        ]
-      }
-    },
+    "fields": {},
     "children": {
       "multiple": false,
       "required": true,

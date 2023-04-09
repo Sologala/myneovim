@@ -203,14 +203,14 @@ module.exports = grammar({
     ),
 
     named_expression: $ => seq(
-      field('name', $._named_expression_lhs),
+      field('name', $._named_expresssion_lhs),
       ':=',
       field('value', $.expression)
     ),
 
-    _named_expression_lhs: $ => choice(
+    _named_expresssion_lhs: $ => choice(
       $.identifier,
-      $.keyword_identifier
+      alias('match', $.identifier), // ambiguity with match statement: only ":" at end of line decides if "match" keyword
     ),
 
     return_statement: $ => seq(
@@ -346,7 +346,7 @@ module.exports = grammar({
       $._suite
     ),
 
-    except_group_clause: $ => seq(
+   except_group_clause: $ => seq(
       'except*',
       seq(
         $.expression,
@@ -359,7 +359,7 @@ module.exports = grammar({
       $._suite
     ),
 
-    finally_clause: $ => seq(
+   finally_clause: $ => seq(
       'finally',
       ':',
       $._suite
@@ -478,7 +478,7 @@ module.exports = grammar({
 
     decorator: $ => seq(
       '@',
-      $.expression,
+      $.primary_expression,
       $._newline
     ),
 
@@ -535,6 +535,7 @@ module.exports = grammar({
 
     pattern: $ => choice(
       $.identifier,
+      alias('match', $.identifier), // ambiguity with match statement: only ":" at end of line decides if "match" keyword
       $.keyword_identifier,
       $.subscript,
       $.attribute,
@@ -609,6 +610,7 @@ module.exports = grammar({
     primary_expression: $ => choice(
       $.binary_operator,
       $.identifier,
+      alias("match", $.identifier),
       $.keyword_identifier,
       $.string,
       $.concatenated_string,
@@ -693,9 +695,9 @@ module.exports = grammar({
             '>',
             '<>',
             'in',
-            alias(seq('not', 'in'), 'not in'),
+            seq('not', 'in'),
             'is',
-            alias(seq('is', 'not'), 'is not')
+            seq('is', 'not')
           )),
         $.primary_expression
       ))
@@ -815,7 +817,7 @@ module.exports = grammar({
     type: $ => $.expression,
 
     keyword_argument: $ => seq(
-      field('name', choice($.identifier, $.keyword_identifier)),
+      field('name', choice($.identifier, $.keyword_identifier, alias("match", $.identifier))),
       '=',
       field('value', $.expression)
     ),
@@ -930,28 +932,17 @@ module.exports = grammar({
     ),
 
     string: $ => seq(
-      field('prefix', alias($._string_start, '"')),
-      repeat(choice(
-        field('interpolation', $.interpolation),
-        field('string_content', $.string_content)
-      )),
-      field('suffix', alias($._string_end, '"'))
+      alias($._string_start, '"'),
+      repeat(choice($.interpolation, $._escape_interpolation, $.escape_sequence, $._not_escape_sequence, $._string_content)),
+      alias($._string_end, '"')
     ),
 
-    string_content: $ => prec.right(0, repeat1(
-      choice(
-        $._escape_interpolation,
-        $.escape_sequence,
-        $._not_escape_sequence,
-        $._string_content
-      ))),
-
     interpolation: $ => seq(
-      token.immediate('{'),
-      field('expression', $._f_expression),
+      '{',
+      $._f_expression,
       optional('='),
-      optional(field('type_conversion', $.type_conversion)),
-      optional(field('format_specifier', $.format_specifier)),
+      optional($.type_conversion),
+      optional($.format_specifier),
       '}'
     ),
 
@@ -961,9 +952,9 @@ module.exports = grammar({
       $.yield,
     ),
 
-    _escape_interpolation: $ => token.immediate(choice('{{', '}}')),
+    _escape_interpolation: $ => choice('{{', '}}'),
 
-    escape_sequence: $ => token.immediate(prec(1, seq(
+    escape_sequence: $ => token(prec(1, seq(
       '\\',
       choice(
         /u[a-fA-F\d]{4}/,
@@ -975,15 +966,17 @@ module.exports = grammar({
       )
     ))),
 
-    _not_escape_sequence: $ => token.immediate('\\'),
+    _not_escape_sequence: $ => '\\',
 
     format_specifier: $ => seq(
       ':',
       repeat(choice(
         token(prec(1, /[^{}\n]+/)),
-        alias($.interpolation, $.format_expression)
+        $.format_expression
       ))
     ),
+
+    format_expression: $ => seq('{', $.expression, '}'),
 
     type_conversion: $ => /![a-z]/,
 
@@ -1034,7 +1027,6 @@ module.exports = grammar({
         'exec',
         'async',
         'await',
-        'match'
       ),
       $.identifier
     )),

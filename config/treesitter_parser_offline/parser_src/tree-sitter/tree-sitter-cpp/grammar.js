@@ -18,7 +18,6 @@ const FOLD_OPERATORS = [
   '&&', '||',
   ',',
   '.*', '->*',
-  'or', 'and', 'bitor', 'xor', 'bitand', 'not_eq',
 ]
 
 module.exports = grammar(C, {
@@ -163,8 +162,7 @@ module.exports = grammar(C, {
       members: original.members.map(
         e => e.name !== 'body'
           ? e
-          : field('body', choice(e.content, $.try_statement)))
-    }),
+          : field('body', choice(e.content, $.try_statement))) }),
 
     virtual_specifier: $ => choice(
       'final', // the only legal value here for classes
@@ -484,9 +482,9 @@ module.exports = grammar(C, {
     ),
 
     access_specifier: $ => choice(
-      'public',
-      'private',
-      'protected'
+     'public',
+     'private',
+     'protected'
     ),
 
     _declarator: ($, original) => choice(
@@ -601,40 +599,35 @@ module.exports = grammar(C, {
     ),
 
     namespace_definition: $ => seq(
-      optional('inline'),
       'namespace',
       field('name', optional(
         choice(
-          $._namespace_identifier,
-          $.nested_namespace_specifier,
+          $.identifier,
+          $.namespace_definition_name,
         ))),
       field('body', $.declaration_list)
     ),
 
     namespace_alias_definition: $ => seq(
       'namespace',
-      field('name', $._namespace_identifier),
+      field('name', $.identifier),
       '=',
       choice(
-        $._namespace_identifier,
-        $.nested_namespace_specifier
+        $.identifier,
+        $.qualified_identifier
       ),
       ';'
     ),
 
-    _namespace_specifier: $ => seq(
-      optional('inline'),
-      $._namespace_identifier
-    ),
-
-    nested_namespace_specifier: $ => prec(1, seq(
-      optional($._namespace_specifier),
-      '::',
+    namespace_definition_name: $ => seq(
       choice(
-        $.nested_namespace_specifier,
-        $._namespace_specifier
-      )
-    )),
+        $.identifier,
+        $.namespace_definition_name,
+      ),
+      '::',
+      optional('inline'),
+      $.identifier,
+    ),
 
     using_declaration: $ => seq(
       'using',
@@ -911,13 +904,13 @@ module.exports = grammar(C, {
 
     constraint_conjunction: $ => prec.left(PREC.LOGICAL_AND, seq(
       field('left', $._requirement_clause_constraint),
-      field('operator', choice('&&', 'and')),
+      field('operator', '&&'),
       field('right', $._requirement_clause_constraint))
     ),
 
     constraint_disjunction: $ => prec.left(PREC.LOGICAL_OR, seq(
       field('left', $._requirement_clause_constraint),
-      field('operator', choice('||', 'or')),
+      field('operator', '||'),
       field('right', $._requirement_clause_constraint))
     ),
 
@@ -1044,11 +1037,11 @@ module.exports = grammar(C, {
     binary_expression: ($, original) => {
       const table = [
         ['<=>', PREC.THREE_WAY],
-        ['or', PREC.LOGICAL_OR],
+        ['or',  PREC.LOGICAL_OR],
         ['and', PREC.LOGICAL_AND],
         ['bitor', PREC.INCLUSIVE_OR],
         ['xor', PREC.EXCLUSIVE_OR],
-        ['bitand', PREC.BITWISE_AND],
+        ['bitand',  PREC.BITWISE_AND],
         ['not_eq', PREC.EQUAL],
       ];
 
@@ -1083,7 +1076,7 @@ module.exports = grammar(C, {
     dependent_field_identifier: $ => seq('template', $.template_method),
     dependent_type_identifier: $ => seq('template', $.template_type),
 
-    _scope_resolution: $ => prec(1, seq(
+    _scope_resolution: $=> prec(1, seq(
       field('scope', optional(choice(
         $._namespace_identifier,
         $.template_type,

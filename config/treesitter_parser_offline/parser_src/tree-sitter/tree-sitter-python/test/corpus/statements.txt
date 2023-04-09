@@ -161,8 +161,8 @@ print >> a, "b", "c"
   (print_statement
     (chevron
       (identifier))
-    (string (string_content))
-    (string (string_content))))
+    (string)
+    (string)))
 
 ================================================================================
 Assert statements
@@ -606,7 +606,7 @@ with e as f, g as h,:
           (call
             (identifier)
             (argument_list
-              (string (string_content))))
+              (string)))
           (as_pattern_target
             (identifier))))
       (with_item
@@ -614,7 +614,7 @@ with e as f, g as h,:
           (call
             (identifier)
             (argument_list
-              (string (string_content))))
+              (string)))
           (as_pattern_target
             (identifier)))))
     (block
@@ -760,7 +760,7 @@ async def d(a:str="default", b=c) -> None:
         name: (identifier)
         type: (type
           (identifier))
-        value: (string string_content: (string_content)))
+        value: (string))
       (default_parameter
         name: (identifier)
         value: (identifier)))
@@ -1018,10 +1018,6 @@ class C:
   async def f():
     g
 
-@buttons[0].clicked.connect
-def spam():
-    ...
-
 --------------------------------------------------------------------------------
 
 (module
@@ -1063,23 +1059,7 @@ def spam():
             (parameters)
             (block
               (expression_statement
-                (identifier))))))))
-  (decorated_definition
-    (decorator
-      (attribute
-        (attribute
-          (subscript
-            (identifier)
-            (integer))
-          (identifier))
-        (identifier)))
-    (function_definition
-      (identifier)
-      (parameters)
-      (block
-        (expression_statement
-          (ellipsis))))))
-
+                (identifier)))))))))
 
 ================================================================================
 Raise statements
@@ -1097,12 +1077,12 @@ raise RunTimeError('NO') from e
     (call
       (identifier)
       (argument_list
-        (string (string_content)))))
+        (string))))
   (raise_statement
     (call
       (identifier)
       (argument_list
-        (string (string_content))))
+        (string)))
     (identifier)))
 
 ================================================================================
@@ -1220,7 +1200,7 @@ print "a"
 
 (module
   (print_statement
-    (string (string_content)))
+    (string))
   (comment))
 
 ================================================================================
@@ -1251,12 +1231,12 @@ exec 'x+=1' in a, b
 
 (module
   (exec_statement
-    (string (string_content)))
+    (string))
   (exec_statement
-    (string (string_content))
+    (string)
     (none))
   (exec_statement
-    (string (string_content))
+    (string)
     (identifier)
     (identifier)))
 
@@ -1323,11 +1303,11 @@ or len("aa")
       (call
         (identifier)
         (argument_list
-          (string (string_content))))
+          (string)))
       (call
         (identifier)
         (argument_list
-          (string (string_content)))))))
+          (string))))))
 
 ================================================================================
 Statements with semicolons

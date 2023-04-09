@@ -9,43 +9,27 @@ int x;
 }  // namespace std
 
 namespace A::B { }
-namespace A::B::inline C { }
 namespace A::B::inline C::D { }
-inline namespace A { }
 
 ---
 
 (translation_unit
   (namespace_definition
-    name: (namespace_identifier)
+    name: (identifier)
     body: (declaration_list
       (declaration
         type: (primitive_type)
         declarator: (identifier))))
   (comment)
   (namespace_definition
-    name: (nested_namespace_specifier
-      (namespace_identifier)
-      (namespace_identifier))
+    name: (namespace_definition_name (identifier) (identifier))
     body: (declaration_list))
   (namespace_definition
-    name: (nested_namespace_specifier
-      (namespace_identifier)
-      (nested_namespace_specifier
-        (namespace_identifier)
-        (namespace_identifier)))
-    body: (declaration_list))
-  (namespace_definition
-    name: (nested_namespace_specifier
-      (namespace_identifier)
-      (nested_namespace_specifier
-        (namespace_identifier)
-        (nested_namespace_specifier
-          (namespace_identifier)
-          (namespace_identifier))))
-    body: (declaration_list))
-  (namespace_definition
-    name: (namespace_identifier)
+    name: (namespace_definition_name
+      (namespace_definition_name
+        (namespace_definition_name (identifier) (identifier))
+        (identifier))
+      (identifier))
     body: (declaration_list)))
 
 =========================================
@@ -62,30 +46,30 @@ namespace literals = std::chono::literals;
 
 (translation_unit
   (namespace_alias_definition
-    name: (namespace_identifier)
-    (namespace_identifier))
+    name: (identifier)
+    (identifier))
   (namespace_alias_definition
-    name: (namespace_identifier)
-    (nested_namespace_specifier
-      (namespace_identifier)))
+    name: (identifier)
+    (qualified_identifier
+      name: (identifier)))
   (namespace_alias_definition
-    name: (namespace_identifier)
-    (nested_namespace_specifier
-      (namespace_identifier)
-      (namespace_identifier)))
+    name: (identifier)
+    (qualified_identifier
+      scope: (namespace_identifier)
+      name: (identifier)))
   (namespace_alias_definition
-    name: (namespace_identifier)
-    (nested_namespace_specifier
-      (nested_namespace_specifier
-        (namespace_identifier)
-        (namespace_identifier))))
+    name: (identifier)
+    (qualified_identifier
+      name: (qualified_identifier
+        scope: (namespace_identifier)
+        name: (identifier))))
   (namespace_alias_definition
-    name: (namespace_identifier)
-    (nested_namespace_specifier
-      (namespace_identifier)
-      (nested_namespace_specifier
-        (namespace_identifier)
-        (namespace_identifier)))))
+    name: (identifier)
+    (qualified_identifier
+      scope: (namespace_identifier)
+      name: (qualified_identifier
+        scope: (namespace_identifier)
+        name: (identifier)))))
 
 =========================================
 Using declarations

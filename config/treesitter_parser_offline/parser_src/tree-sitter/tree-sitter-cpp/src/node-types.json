@@ -1777,10 +1777,6 @@
           {
             "type": "&&",
             "named": false
-          },
-          {
-            "type": "and",
-            "named": false
           }
         ]
       },
@@ -1862,10 +1858,6 @@
         "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "or",
-            "named": false
-          },
           {
             "type": "||",
             "named": false
@@ -2743,30 +2735,6 @@
             "named": false
           },
           {
-            "type": "and",
-            "named": false
-          },
-          {
-            "type": "bitand",
-            "named": false
-          },
-          {
-            "type": "bitor",
-            "named": false
-          },
-          {
-            "type": "not_eq",
-            "named": false
-          },
-          {
-            "type": "or",
-            "named": false
-          },
-          {
-            "type": "xor",
-            "named": false
-          },
-          {
             "type": "|",
             "named": false
           },
@@ -3543,7 +3511,7 @@
         "required": true,
         "types": [
           {
-            "type": "namespace_identifier",
+            "type": "identifier",
             "named": true
           }
         ]
@@ -3554,11 +3522,11 @@
       "required": true,
       "types": [
         {
-          "type": "namespace_identifier",
+          "type": "identifier",
           "named": true
         },
         {
-          "type": "nested_namespace_specifier",
+          "type": "qualified_identifier",
           "named": true
         }
       ]
@@ -3583,11 +3551,11 @@
         "required": false,
         "types": [
           {
-            "type": "namespace_identifier",
+            "type": "identifier",
             "named": true
           },
           {
-            "type": "nested_namespace_specifier",
+            "type": "namespace_definition_name",
             "named": true
           }
         ]
@@ -3595,19 +3563,19 @@
     }
   },
   {
-    "type": "nested_namespace_specifier",
+    "type": "namespace_definition_name",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
-          "type": "namespace_identifier",
+          "type": "identifier",
           "named": true
         },
         {
-          "type": "nested_namespace_specifier",
+          "type": "namespace_definition_name",
           "named": true
         }
       ]
