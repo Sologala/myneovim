@@ -4,7 +4,7 @@ if not status_ok then
   return
 end
 
-vim.opt.runtimepath:append("~/.config/nvim/treesitter_parser_offline")
+-- vim.opt.runtimepath:append("~/.config/nvim/treesitter_parser_offline")
 
 -- for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
 --   config.install_info.url = config.install_info.url:gsub("https://github.com/", "~/.config/nvim/treesitter_parser_offline/parser_src/")
@@ -12,8 +12,8 @@ vim.opt.runtimepath:append("~/.config/nvim/treesitter_parser_offline")
 
         
 configs.setup {
-  parser_install_dir = "~/.config/nvim/treesitter_parser_offline",
---ensure_installed = { "cpp", "c", "python", "go", "markdown", "json", "yaml", "html",  }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  -- parser_install_dir = "~/.config/nvim/treesitter_parser_offline",
+  ensure_installed = { "cpp", "c", "python", "go", "markdown", "json", "yaml", "html",  },-- one of "all", "maintained" (parsers with maintainers), or a list of languages
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {

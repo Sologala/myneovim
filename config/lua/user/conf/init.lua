@@ -28,7 +28,7 @@ M.setup = function()
     "trouble",
     "cmp",
     "gitsigns",
-    "treesitter",
+    "treesitter-bck",
     "treesitter-context",
   }
 
