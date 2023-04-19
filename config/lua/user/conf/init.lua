@@ -30,6 +30,7 @@ M.setup = function()
     "gitsigns",
     "treesitter-bck",
     "treesitter-context",
+    "hop",
   }
 
   local helper_set = {}
