@@ -129,7 +129,7 @@ if not status_cmp_ok then
     vim.notify("cmp not found")
   return
 end
-vim.notify("cmp found")
+-- vim.notify("cmp found")
 local status_luasnip_ok, luasnip = pcall(require, "luasnip")
 if not status_luasnip_ok then
   return
