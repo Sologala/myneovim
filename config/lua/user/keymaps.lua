@@ -30,8 +30,9 @@ keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 -- keymap("n", "k", "<Plug>(accelerated_jk_gk)", opts)
 
 -- formatting
-keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
---keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+keymap("n", "<leader>F", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
+keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+-- keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.formatexpr()<CR>", opts)
 
 -- save buffer
 keymap("n", "<leader>w", ":w<cr>", opts)
