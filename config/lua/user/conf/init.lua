@@ -31,6 +31,7 @@ M.setup = function()
     "treesitter-bck",
     "treesitter-context",
     "hop",
+    "winshift",
   }
 
   local helper_set = {}

@@ -79,12 +79,12 @@ local opts = {
 }
 
 local mappings = {
-  ["a"] = { "<cmd>Alpha<cr>", "Welcome" },
+  -- ["a"] = { "<cmd>Alpha<cr>", "Welcome" },
   ["r"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-  -- ["b"] = {
-  --   "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-  --   "Buffers",
-  -- },
+  ["b"] = {
+    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+    "Buffers",
+  },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   -- ["w"] = { "<cmd>w!<CR>", "Save" },
   -- ["q"] = { "<cmd>q!<CR>", "Quit" },
@@ -107,9 +107,9 @@ local mappings = {
   --   -- "<cmd>lua require('telescope.builtin').lsp_workspace_symbols()<cr>",
   --   "Find Symobls",
   -- },
- ["t"] = {
-    "<cmd>UltestSummary<CR>", "Unit Test"
-  },
+ -- ["t"] = {
+ --    "<cmd>UltestSummary<CR>", "Unit Test"
+ --  },
 
   ["o"] = {
     "<cmd>SymbolsOutline<CR>", "Outline"
@@ -128,30 +128,30 @@ local mappings = {
     s = {"<cmd>CMake set_target_args<CR>", "SetArg"},
   },
 
-  d = {
-    name = "Debug",
-    R = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run to Cursor" },
-    E = { "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<cr>", "Evaluate Input" },
-    X = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
-    -- C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
-    T = { "<cmd>lua require'dapui'.toggle('sidebar')<cr>", "Toggle Sidebar" },
-    p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-    r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-    q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-
-    -- b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-    -- c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-    -- d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-    -- e = { "<cmd>lua require'dapui'.eval()<cr>", "Evaluate" },
-    -- g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-    -- h = { "<cmd>lua require'dap.ui.widgets'.hover()<cr>", "Hover Variables" },
-    -- S = { "<cmd>lua require'dap.ui.widgets'.scopes()<cr>", "Scopes" },
-    -- i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-    -- o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-    -- t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-    -- u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-  },
-
+  -- d = {
+  --   name = "Debug",
+  --   R = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run to Cursor" },
+  --   E = { "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<cr>", "Evaluate Input" },
+  --   X = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
+  --   -- C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
+  --   T = { "<cmd>lua require'dapui'.toggle('sidebar')<cr>", "Toggle Sidebar" },
+  --   p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
+  --   r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
+  --   q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
+  --
+  --   -- b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
+  --   -- c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+  --   -- d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
+  --   -- e = { "<cmd>lua require'dapui'.eval()<cr>", "Evaluate" },
+  --   -- g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
+  --   -- h = { "<cmd>lua require'dap.ui.widgets'.hover()<cr>", "Hover Variables" },
+  --   -- S = { "<cmd>lua require'dap.ui.widgets'.scopes()<cr>", "Scopes" },
+  --   -- i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+  --   -- o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
+  --   -- t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+  --   -- u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
+  -- },
+  --
   T = {
     name = "Trouble",
     t = { "<cmd>Trouble<cr>", "ToggleTrouble" },
