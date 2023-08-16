@@ -1,0 +1,1 @@
+sudo apt-get install -y autoconf automake build-essential cmake gcc-multilib gettext gperf libtool-bin locales ninja-build python3-pip  libncurses5-dev  libatk1.0-dev  libcairo2-dev  libxpm-dev libxt-dev  lua5.1 liblua5.1.0-dev  ninja-buildi lua-mediator
