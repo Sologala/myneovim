@@ -119,6 +119,8 @@ keymap("n", "<leader>u", "<cmd>Trouble lsp_references<cr>", opts)
 
 keymap("n", "<space>F","<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args(require('telescope.themes').get_ivy())<cr>", opts) 
 keymap("v", "<space>F","<cmd>lua require('user.utils').FindCursorWord()<cr>", opts) 
+keymap("n", "<leader>s","<cmd>lua require('flash').jump()<cr>", opts) 
+keymap("v", "<leader>s","<cmd>lua require('flash').jump()<cr>", opts) 
 
 --keymap("n", "<space>F",FindCursorWord(), opts) 
 --
